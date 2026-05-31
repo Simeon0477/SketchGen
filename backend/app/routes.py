@@ -123,7 +123,6 @@ def generate_image():
 
     return jsonify({
         "status"   : "success",
-        "prompt_en": prompt_en,
         "image"    : img_b64,
     })
 

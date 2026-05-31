@@ -27,7 +27,7 @@ function Generator({ title, desc, cssClass, placeholder, type }: GeneratorProps)
       const response = await fetch(`http://localhost:5000${endpoint}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ prompt, num_frames: 16 }),
+        body: JSON.stringify({prompt}),
       });
 
       if (!response.ok) throw new Error(`Erreur serveur : ${response.status}`);
