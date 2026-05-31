@@ -1,0 +1,47 @@
+header {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 100px 24px 80px;
+    overflow: hidden;
+}
+
+header .content {
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 680px;
+    width: 40%;
+}
+
+header h1 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: clamp(2.4rem, 8vw, 5rem);
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.img-container {
+    width: 50%;
+}
+
+.banner-img {
+    width: 500px;
+    height: 500px;
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%),
+                        linear-gradient(to top, black 80%, transparent 100%),
+                        linear-gradient(to right, black 80%, transparent 100%),
+                        linear-gradient(to left, black 80%, transparent 100%);
+    -webkit-mask-composite: destination-in;
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%),
+                linear-gradient(to top, black 80%, transparent 100%),
+                linear-gradient(to right, black 80%, transparent 100%),
+                linear-gradient(to left, black 80%, transparent 100%);
+    mask-composite: intersect;
+}
