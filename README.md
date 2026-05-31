@@ -4,12 +4,6 @@ SketchGen est une application web de génération d'images et de vidéos en styl
 
 L'utilisateur saisit un prompt en français, qui est automatiquement traduit en anglais avant d'être transmis au modèle de génération.
 
-## Stack technique
-
-- **Frontend** : React + TypeScript
-- **Backend** : Flask (Python)
-- **Modèles** : Stable Diffusion 1.5, LoRA sketch, AnimateDiff, Helsinki-NLP/opus-mt-fr-en
-
 ## Structure du projet
 
 ```
@@ -34,13 +28,6 @@ SketchGen/
 │   ├── requirements.txt
 │   └── run.py
 ```
-
-## Prérequis
-
-- Python 3.10 ou 3.12
-- Node.js 18+
-- GPU avec au moins 6 Go de VRAM (recommandé)
-- Environ 5 Go d'espace disque libre pour les modèles
 
 ## Installation
 
